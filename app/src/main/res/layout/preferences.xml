@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Selecciona tu juego favorito"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonGame1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Angry Birds" />
+
+        <RadioButton
+            android:id="@+id/radioButtonGame2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dragon Fly" />
+
+        <RadioButton
+            android:id="@+id/radioButtonGame3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hill Climb Racing" />
+
+        <RadioButton
+            android:id="@+id/radioButtonGame4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pocket Soccer" />
+
+        <RadioButton
+            android:id="@+id/radioButtonGame5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Radiant Defense" />
+    </RadioGroup>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroup"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:numStars="5"
+        android:stepSize="0.5" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ratingBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@android:drawable/ic_dialog_email" />
+
+</RelativeLayout>
