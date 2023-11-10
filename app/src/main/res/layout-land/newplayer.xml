@@ -124,9 +124,7 @@
                 android:id="@+id/spinnerEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp">
-                <!-- Puedes agregar opciones al Spinner aquí -->
-            </Spinner>
+                android:layout_marginBottom="8dp" />
 
             <!-- EditText para Email -->
             <EditText
